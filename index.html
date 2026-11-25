@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leon — PUBG MOBILE content creator, gamer, and software developer based in Nairobi, Kenya. Gaming. Technology. Ideas. Let's Make Things Happen.">
+    <meta name="keywords" content="Leon, PUBG Mobile, content creator, software developer, Nairobi, Kenya, web development, gaming, Leon brand">
+    <meta name="author" content="Leon">
+    <meta name="theme-color" content="#0a0a0f">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Leon — Gaming. Technology. Ideas.">
+    <meta property="og:description" content="PUBG MOBILE content creator and software developer. Let's connect, have fun, and build something together.">
+    <meta property="og:locale" content="en_KE">
+
+    <title>Leon — Gaming. Technology. Ideas. Let's Make Things Happen.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animated background grid -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--blue" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--purple" aria-hidden="true"></div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <header class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#hero" class="nav__brand" aria-label="Leon home">
+                <span class="nav__logo">L</span>
+                <span class="nav__brandname">LEON</span>
+            </a>
+
+            <nav class="nav__links" id="navLinks" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#gaming">Gaming</a>
+                <a href="#software">Software</a>
+                <a href="#services">Services</a>
+                <a href="#community">Community</a>
+                <a href="#connect">Connect</a>
+            </nav>
+
+            <a href="https://wa.me/254748397839?text=Hi%20Leon!%20I%20saw%20your%20website%20and%20I'd%20love%20to%20connect." 
+               class="btn btn--primary btn--sm nav__cta" 
+               target="_blank" rel="noopener">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.6 6.3A7.8 7.8 0 0 0 12 4a7.9 7.9 0 0 0-6.8 11.9L4 20l4.2-1.1A7.9 7.9 0 0 0 12 20a7.9 7.9 0 0 0 5.6-13.7Zm-5.6 12a6.5 6.5 0 0 1-3.3-.9l-.2-.1-2.5.7.7-2.4-.2-.2a6.6 6.6 0 1 1 5.5 2.9Zm3.6-4.9c-.2-.1-1.2-.6-1.4-.6s-.3-.1-.4.1-.5.6-.6.8-.2.1-.4 0a5.4 5.4 0 0 1-2.6-2.3c-.2-.3.2-.3.5-1 0-.1 0-.2 0-.3l-.6-1.4c-.2-.4-.3-.3-.4-.3h-.4a.8.8 0 0 0-.6.3 2.4 2.4 0 0 0-.8 1.8 4.1 4.1 0 0 0 .9 2.2 9.3 9.3 0 0 0 3.6 3.2c.5.2.9.3 1.2.4a2.8 2.8 0 0 0 1.3.1c.4-.1 1.2-.5 1.4-1s.1-.9.1-1-.1-.2-.3-.3Z"/></svg>
+                Let's Talk
+            </a>
+
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero__inner">
+            <div class="hero__badge reveal">
+                <span class="pulse-dot"></span>
+                Available for collaborations &amp; projects
+            </div>
+
+            <h1 class="hero__name reveal" data-delay="1">
+                <span class="hero__name-letter">L</span>
+                <span class="hero__name-letter">E</span>
+                <span class="hero__name-letter">O</span>
+                <span class="hero__name-letter">N</span>
+            </h1>
+
+            <p class="hero__tagline reveal" data-delay="2">
+                Gaming. Technology. Ideas. <span class="accent">Let's Make Things Happen.</span>
+            </p>
+
+            <p class="hero__intro reveal" data-delay="3">
+                I'm Leon — a PUBG MOBILE content creator, gamer, and software developer.
+                I enjoy creating gaming content, connecting with people, exploring new ideas,
+                and using technology to solve real-world problems. Whether it's gaming, tech,
+                or a crazy new idea, let's connect, have fun, and build something together.
+            </p>
+
+            <div class="hero__actions reveal" data-delay="4">
+                <a href="https://wa.me/254748397839?text=Hi%20Leon!%20I%20saw%20your%20website%20and%20I'd%20love%20to%20connect." 
+                   class="btn btn--primary" target="_blank" rel="noopener">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.6 6.3A7.8 7.8 0 0 0 12 4a7.9 7.9 0 0 0-6.8 11.9L4 20l4.2-1.1A7.9 7.9 0 0 0 12 20a7.9 7.9 0 0 0 5.6-13.7Zm-5.6 12a6.5 6.5 0 0 1-3.3-.9l-.2-.1-2.5.7.7-2.4-.2-.2a6.6 6.6 0 1 1 5.5 2.9Z"/></svg>
+                    Let's Talk
+                </a>
+                <a href="#about" class="btn btn--ghost" data-scroll>
+                    Explore My World
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16.5 5.5 10l1.1-1.1L12 14.3l5.4-5.4L18.5 10Z"/></svg>
+                </a>
+            </div>
+
+            <div class="hero__meta reveal" data-delay="5">
+                <div class="hero__meta-item">
+                    <span class="hero__meta-label">Location</span>
+                    <span class="hero__meta-value">Dandora, Nairobi, Kenya</span>
+                </div>
+                <div class="hero__meta-divider" aria-hidden="true"></div>
+                <div class="hero__meta-item">
+                    <span class="hero__meta-label">PUBG UID</span>
+                    <span class="hero__meta-value">52458215837</span>
+                </div>
+                <div class="hero__meta-divider" aria-hidden="true"></div>
+                <div class="hero__meta-item">
+                    <span class="hero__meta-label">WhatsApp</span>
+                    <span class="hero__meta-value">+254 748 397 839</span>
+                </div>
+            </div>
+        </div>
+
+        <a href="#about" class="hero__scroll" data-scroll aria-label="Scroll to About">
+            <span class="hero__scroll-text">Scroll</span>
+            <span class="hero__scroll-line"></span>
+        </a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section__head reveal">
+                <span class="section__eyebrow">01 — About Me</span>
+                <h2 class="section__title">Get to know the player behind the screen</h2>
+            </div>
+
+            <div class="about__grid">
+                <div class="about__card glass reveal">
+                    <div class="about__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 6H3a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm-10 9H5v-2h6Zm0-3H5v-2h6Zm0-3H5V7h6Zm8 6h-6v-2h6Zm0-3h-6v-2h6Zm0-3h-6V7h6Z"/></svg>
+                    </div>
+                    <h3>Content Creator</h3>
+                    <p>A PUBG MOBILE content creator sharing gameplay, highlights, and the everyday energy of the grind — built for the community that loves the game as much as I do.</p>
+                </div>
+
+                <div class="about__card glass reveal" data-delay="1">
+                    <div class="about__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 6V4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2h3a2 2 0 0 1 2 2v11a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V8a2 2 0 0 1 2-2Zm2-2v2h6V4ZM5 11v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7Z"/></svg>
+                    </div>
+                    <h3>Passionate Gamer</h3>
+                    <p>Gaming isn't just a hobby — it's how I connect, compete, and create. PUBG MOBILE is home base, but I'm always up for exploring new worlds and new challenges.</p>
+                </div>
+
+                <div class="about__card glass reveal" data-delay="2">
+                    <div class="about__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9-3 3 3 3 1-1-2-2 2-2Zm8 0-1 1 2 2-2 2 1 1 3-3ZM12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.9-13-2 6.2L10 11l-2.5 4h11L15 8.8 13 11Z"/></svg>
+                    </div>
+                    <h3>Software Developer</h3>
+                    <p>I build websites and software solutions that turn ideas into something real and useful — clean code, thoughtful design, and tech that actually solves problems.</p>
+                </div>
+
+                <div class="about__card glass reveal" data-delay="3">
+                    <div class="about__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-5 0-9 2.5-9 6v2h18v-2c0-3.5-4-6-9-6Z"/></svg>
+                    </div>
+                    <h3>Connector &amp; Explorer</h3>
+                    <p>I genuinely enjoy meeting people and exploring creative ideas. Whether you bring a game, a project, or a wild concept — I'm the kind of person who wants to hear it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GAMING ===== -->
+    <section class="section section--alt" id="gaming">
+        <div class="container">
+            <div class="section__head reveal">
+                <span class="section__eyebrow">02 — Gaming</span>
+                <h2 class="section__title">My Gaming World</h2>
+                <p class="section__lead">
+                    PUBG MOBILE is where I create, compete, and build community. Drop in, squad up, and let's make every match count.
+                </p>
+            </div>
+
+            <div class="gaming__grid">
+                <!-- UID Card -->
+                <div class="uid-card glass reveal">
+                    <div class="uid-card__head">
+                        <div class="uid-card__badge">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 6H3a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2ZM7 13H5v-2h2Zm0-3H5V8h2Zm12 6H9V8h10Z"/></svg>
+                            PUBG MOBILE
+                        </div>
+                        <span class="uid-card__tag">Content Creator</span>
+                    </div>
+
+                    <div class="uid-card__body">
+                        <span class="uid-card__label">My In-Game UID</span>
+                        <div class="uid-card__value" id="uidValue">52458215837</div>
+                    </div>
+
+                    <div class="uid-card__actions">
+                        <button class="btn btn--primary btn--sm" id="copyUid" type="button">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 0 0-2 2v12h2V3h12Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h11Z"/></svg>
+                            <span id="copyUidText">Copy UID</span>
+                        </button>
+                        <a href="https://wa.me/254748397839?text=Hi%20Leon!%20I%20found%20your%20PUBG%20Mobile%20UID%20on%20your%20website.%20Let's%20squad%20up%20sometime!"
+                           class="btn btn--ghost btn--sm" target="_blank" rel="noopener">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.6 6.3A7.8 7.8 0 0 0 12 4a7.9 7.9 0 0 0-6.8 11.9L4 20l4.2-1.1A7.9 7.9 0 0 0 12 20a7.9 7.9 0 0 0 5.6-13.7Z"/></svg>
+                            Squad Up on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Screenshots / Highlights placeholder -->
+                <div class="gallery reveal" data-delay="1">
+                    <div class="gallery__head">
+                        <h3>Screenshots &amp; Highlights</h3>
+                        <span class="gallery__note">Coming soon</span>
+                    </div>
+                    <div class="gallery__grid">
+                        <div class="gallery__item placeholder">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 5H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm-3 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM4 17l5-5 4 4 3-3 4 4Z"/></svg>
+                            <span>PUBG Screenshot 1</span>
+                        </div>
+                        <div class="gallery__item placeholder">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7Z"/></svg>
+                            <span>Gaming Highlight</span>
+                        </div>
+                        <div class="gallery__item placeholder">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 5H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm-3 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM4 17l5-5 4 4 3-3 4 4Z"/></svg>
+                            <span>PUBG Screenshot 2</span>
+                        </div>
+                        <div class="gallery__item placeholder">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7Z"/></svg>
+                            <span>Highlight Clip</span>
+                        </div>
+                    </div>
+                    <p class="gallery__hint">
+                        Add your PUBG screenshots, highlight reels, and clips here. Replace the placeholders in <code>index.html</code> with image links.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Social row -->
+            <div class="social-strip glass reveal" data-delay="2">
+                <span class="social-strip__label">Follow my gaming journey</span>
+                <div class="social-strip__links">
+                    <a href="https://www.tiktok.com/@raph_leon" class="social-chip" target="_blank" rel="noopener" data-name="TikTok">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3a5 5 0 0 0 4 4v3a8 8 0 0 1-4-1v6a6 6 0 1 1-6-6v3a3 3 0 1 0 3 3V3Z"/></svg>
+                        <span>TikTok</span>
+                        <small>@raph_leon</small>
+                    </a>
+                    <a href="#" class="social-chip social-chip--placeholder" data-name="Instagram" aria-label="Instagram (link to be added)">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-7.1 17A10 10 0 1 0 12 2Zm5 4a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm-5 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"/></svg>
+                        <span>Instagram</span>
+                        <small>[Add link]</small>
+                    </a>
+                    <a href="#" class="social-chip social-chip--placeholder" data-name="Facebook" aria-label="Facebook (link to be added)">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 22v-8h3l1-4h-4V8a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2H7v4h2v8Z"/></svg>
+                        <span>Facebook</span>
+                        <small>[Add link]</small>
+                    </a>
+                    <a href="#" class="social-chip social-chip--placeholder" data-name="YouTube" aria-label="YouTube (link to be added)">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8a3 3 0 0 0-2-2C17 5 12 5 12 5s-5 0-7 1a3 3 0 0 0-2 2 31 31 0 0 0 0 8 3 3 0 0 0 2 2c2 1 7 1 7 1s5 0 7-1a3 3 0 0 0 2-2 31 31 0 0 0 0-8Zm-9 5V9l4 2Z"/></svg>
+                        <span>YouTube</span>
+                        <small>[Add link]</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOFTWARE DEVELOPMENT ===== -->
+    <section class="section" id="software">
+        <div class="container">
+            <div class="section__head reveal">
+                <span class="section__eyebrow">03 — Software Development</span>
+                <h2 class="section__title">Turning Ideas Into Reality</h2>
+                <p class="section__lead">
+                    I build websites and software solutions that help people, businesses, and ideas move forward — clean, functional, and built to solve real problems.
+                </p>
+            </div>
+
+            <div class="software__grid">
+                <div class="software__card glass reveal">
+                    <div class="software__num">01</div>
+                    <div class="software__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2ZM3 18V8h18v10Zm4-3 2-2-2-2-1 1 1 1-1 1Z"/></svg>
+                    </div>
+                    <h3>Website Development</h3>
+                    <p>Modern, responsive websites for individuals, businesses, and organizations — built to look great on every screen and load fast.</p>
+                </div>
+
+                <div class="software__card glass reveal" data-delay="1">
+                    <div class="software__num">02</div>
+                    <div class="software__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9-3 3 3 3 1-1-2-2 2-2Zm8 0-1 1 2 2-2 2 1 1 3-3ZM12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z"/></svg>
+                    </div>
+                    <h3>Web Applications</h3>
+                    <p>Custom web-based systems designed to solve everyday business problems — from dashboards to tools that make work simpler.</p>
+                </div>
+
+                <div class="software__card glass reveal" data-delay="2">
+                    <div class="software__num">03</div>
+                    <div class="software__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5Zm0 7L4 6l8-3 8 3Zm-8 4 8 4 8-4-2-1-6 3-6-3Zm0 5 8 4 8-4-2-1-6 3-6-3Z"/></svg>
+                    </div>
+                    <h3>Creative Digital Solutions</h3>
+                    <p>Beyond templates — creative, tailored digital solutions that fit the actual need, not a one-size-fits-all approach.</p>
+                </div>
+
+                <div class="software__card glass reveal" data-delay="3">
+                    <div class="software__num">04</div>
+                    <div class="software__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
+                    </div>
+                    <h3>Problem-Solving Through Tech</h3>
+                    <p>Every project starts with a problem. I help translate it into something practical, buildable, and genuinely useful.</p>
+                </div>
+            </div>
+
+            <div class="cta-band glass reveal" data-delay="4">
+                <div class="cta-band__text">
+                    <h3>Have an idea or a problem that needs a digital solution?</h3>
+                    <p>Let's talk about it. No pressure, no jargon — just a real conversation about what you're trying to build.</p>
+                </div>
+                <a href="https://wa.me/254748397839?text=Hi%20Leon!%20I%20have%20an%20idea%20(or%20a%20problem)%20that%20needs%20a%20digital%20solution.%20Can%20we%20discuss%20it?" 
+                   class="btn btn--primary" target="_blank" rel="noopener">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.6 6.3A7.8 7.8 0 0 0 12 4a7.9 7.9 0 0 0-6.8 11.9L4 20l4.2-1.1A7.9 7.9 0 0 0 12 20a7.9 7.9 0 0 0 5.6-13.7Z"/></svg>
+                    Discuss Your Idea
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section section--alt" id="services">
+        <div class="container">
+            <div class="section__head reveal">
+                <span class="section__eyebrow">04 — Services</span>
+                <h2 class="section__title">What I Offer</h2>
+                <p class="section__lead">
+                    Four ways we can work together — from websites and web apps to consultation and gaming content.
+                </p>
+            </div>
+
+            <div class="services__grid">
+                <div class="service-card glass reveal">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2ZM3 18V8h18v10Zm4-3 2-2-2-2-1 1 1 1-1 1Z"/></svg>
+                    </div>
+                    <h3>Website Development</h3>
+                    <p>Building modern, responsive websites for individuals, businesses, and organizations.</p>
+                    <a href="https://wa.me/254748397839?text=Hi%20Leon!%20I'm%20interested%20in%20your%20Website%20Development%20service.%20Can%20we%20discuss%20my%20project?" 
+                       class="service-card__link" target="_blank" rel="noopener">
+                        Start a Project
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h12l-5-5 1-1 7 7-7 7-1-1 5-5H5Z"/></svg>
+                    </a>
+                </div>
+
+                <div class="service-card glass reveal" data-delay="1">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9-3 3 3 3 1-1-2-2 2-2Zm8 0-1 1 2 2-2 2 1 1 3-3ZM12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z"/></svg>
+                    </div>
+                    <h3>Web Applications</h3>
+                    <p>Developing custom web-based systems to solve everyday business problems.</p>
+                    <a href="https://wa.me/254748397839?text=Hi%20Leon!%20I%20need%20a%20custom%20web%20application.%20Can%20we%20talk%20about%20it?" 
+                       class="service-card__link" target="_blank" rel="noopener">
+                        Start a Project
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h12l-5-5 1-1 7 7-7 7-1-1 5-5H5Z"/></svg>
+                    </a>
+                </div>
+
+                <div class="service-card glass reveal" data-delay="2">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5Zm-8 9 8 4 8-4-2-1-6 3-6-3Zm0 5 8 4 8-4-2-1-6 3-6-3Z"/></svg>
+                    </div>
+                    <h3>Software Consultation</h3>
+                    <p>Discussing technology ideas and helping people explore possible digital solutions.</p>
+                    <a href="https://wa.me/254748397839?text=Hi%20Leon!%20I'd%20like%20a%20software%20consultation%20to%20explore%20an%20idea." 
+                       class="service-card__link" target="_blank" rel="noopener">
+                        Discuss an Idea
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h12l-5-5 1-1 7 7-7 7-1-1 5-5H5Z"/></svg>
+                    </a>
+                </div>
+
+                <div class="service-card glass reveal" data-delay="3">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 6H3a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2ZM7 13H5v-2h2Zm0-3H5V8h2Zm12 6H9V8h10Z"/></svg>
+                    </div>
+                    <h3>Gaming Content</h3>
+                    <p>PUBG MOBILE gaming content, community interaction, and potential gaming collaborations.</p>
+                    <a href="https://wa.me/254748397839?text=Hi%20Leon!%20I'm%20interested%20in%20gaming%20content%20and%20collaborations.%20Let's%20connect!" 
+                       class="service-card__link" target="_blank" rel="noopener">
+                        Explore My Gaming World
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h12l-5-5 1-1 7 7-7 7-1-1 5-5H5Z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Pricing note -->
+            <div class="pricing-note glass reveal" data-delay="4">
+                <div class="pricing-note__icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 3 5v6c0 5 4 9 9 11 5-2 9-6 9-11V5Zm0 10h7a7 7 0 0 1-7 7Zm0-2V4l6 3v6Z"/></svg>
+                </div>
+                <div>
+                    <h3>Pricing</h3>
+                    <p>Every project is different — contact me for a personalized quotation based on what you need.</p>
+                </div>
+                <a href="https://wa.me/254748397839?text=Hi%20Leon!%20I'd%20like%20a%20quotation%20for%20a%20project.%20Here%20are%20the%20details%3A%20" 
+                   class="btn btn--ghost btn--sm" target="_blank" rel="noopener">Get a Quotation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRODUCTS (editable / empty state) ===== -->
+    <section class="section" id="products">
+        <div class="container">
+            <div class="section__head reveal">
+                <span class="section__eyebrow">05 — Products &amp; Pricing</span>
+                <h2 class="section__title">Products &amp; Services on Offer</h2>
+            </div>
+
+            <div class="empty-state glass reveal">
+                <div class="empty-state__icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4V2h10v2h5v3a3 3 0 0 1-2 2.8V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9.8A3 3 0 0 1 2 7V4Zm1 6v10h8V10Zm-2-4v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6Zm6 2h4v3h-2v-1h-2Z"/></svg>
+                </div>
+                <h3>Have a project in mind?</h3>
+                <p>Contact me for a personalized quotation. Products and packaged services will appear in this section once added.</p>
+                <a href="https://wa.me/254748397839?text=Hi%20Leon!%20I%20have%20a%20project%20in%20mind.%20Can%20we%20talk%20about%20a%20personalized%20quotation?" 
+                   class="btn btn--primary" target="_blank" rel="noopener">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.6 6.3A7.8 7.8 0 0 0 12 4a7.9 7.9 0 0 0-6.8 11.9L4 20l4.2-1.1A7.9 7.9 0 0 0 12 20a7.9 7.9 0 0 0 5.6-13.7Z"/></svg>
+                    Contact for Quotation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROMOTIONS (hidden by default — activate in script.js) ===== -->
+    <section class="section section--alt" id="promo" hidden>
+        <div class="container">
+            <div class="section__head reveal">
+                <span class="section__eyebrow">06 — Limited Offer</span>
+                <h2 class="section__title" id="promoTitle">Active Promotion</h2>
+            </div>
+
+            <div class="promo-card glass reveal" id="promoCard">
+                <div class="promo-card__badge" id="promoBadge">-X%</div>
+                <div class="promo-card__body">
+                    <h3 id="promoName">Promotion title</h3>
+                    <p id="promoDesc">Offer description goes here.</p>
+                    <div class="promo-card__dates">
+                        <span id="promoStart">Start date</span>
+                        <span class="promo-card__dash">→</span>
+                        <span id="promoEnd">End date</span>
+                    </div>
+                </div>
+                <a href="https://wa.me/254748397839?text=Hi%20Leon!%20I%20saw%20your%20promotion%20and%20I'd%20like%20to%20enquire." 
+                   class="btn btn--primary btn--sm" target="_blank" rel="noopener">Enquire Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PAYMENT & DELIVERY ===== -->
+    <section class="section" id="logistics">
+        <div class="container">
+            <div class="section__head reveal">
+                <span class="section__eyebrow">07 — Payment &amp; Delivery</span>
+                <h2 class="section__title">How Projects Work</h2>
+            </div>
+
+            <div class="logistics__grid">
+                <div class="logistics-card glass reveal">
+                    <div class="logistics-card__head">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm-10 9H8v2H6v-2H4v-2h2V9h2v2h2Zm6 1h-4v-2h4Zm2-3h-6V8h6Z"/></svg>
+                        <h3>Payment Methods</h3>
+                    </div>
+                    <ul class="logistics-card__list">
+                        <li>M-PESA</li>
+                        <li>Bank transfer <em>(subject to confirmation)</em></li>
+                    </ul>
+                    <p class="logistics-card__note">Payment account details are shared directly with clients when needed — never published publicly.</p>
+                </div>
+
+                <div class="logistics-card glass reveal" data-delay="1">
+                    <div class="logistics-card__head">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
+                        <h3>Delivery &amp; Availability</h3>
+                    </div>
+                    <ul class="logistics-card__list">
+                        <li><strong>Digital services:</strong> delivered online.</li>
+                        <li><strong>Website projects:</strong> delivered through an agreed deployment or handover process.</li>
+                        <li><strong>Consultations:</strong> available through WhatsApp or other agreed channels.</li>
+                    </ul>
+                </div>
+
+                <div class="logistics-card glass reveal" data-delay="2">
+                    <div class="logistics-card__head">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm1-13h-2v6l5 3 1-1-4-2Z"/></svg>
+                        <h3>Business Hours</h3>
+                    </div>
+                    <ul class="logistics-card__list hours-list">
+                        <li><span>Monday – Friday</span><span>Contact for availability</span></li>
+                        <li><span>Saturday</span><span>Contact for availability</span></li>
+                        <li><span>Sunday</span><span>Contact for availability</span></li>
+                    </ul>
+                    <p class="logistics-card__note">Outside these hours? You can still send a WhatsApp message and I'll get back to you.</p>
+                </div>
+
+                <div class="logistics-card glass reveal" data-delay="3">
+                    <div class="logistics-card__head">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 3 5v6c0 5 4 9 9 11 5-2 9-6 9-11V5Zm0 10h7a7 7 0 0 1-7 7Zm0-9 6 3v6h-6Z"/></svg>
+                        <h3>Support &amp; Warranty</h3>
+                    </div>
+                    <ul class="logistics-card__list">
+                        <li>Support terms depend on the project agreement.</li>
+                        <li>Bug fixes and maintenance are agreed upon before project completion.</li>
+                        <li>Additional features and major changes may attract extra charges.</li>
+                    </ul>
+                    <p class="logistics-card__note">No universal warranty is advertised — terms are set per project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COMMUNITY ===== -->
+    <section class="section section--alt" id="community">
+        <div class="container">
+            <div class="section__head reveal">
+                <span class="section__eyebrow">08 — Community</span>
+                <h2 class="section__title">Join the Leon Community</h2>
+                <p class="section__lead">
+                    A space for gamers, builders, and creative thinkers to connect, share ideas, and collaborate.
+                </p>
+            </div>
+
+            <div class="community__welcome reveal">
+                <div class="community__audience">
+                    <span class="community__chip">PUBG MOBILE players</span>
+                    <span class="community__chip">Gaming content creators</span>
+                    <span class="community__chip">Developers</span>
+                    <span class="community__chip">Entrepreneurs</span>
+                    <span class="community__chip">Creative thinkers</span>
+                </div>
+                <p class="community__text">
+                    Whether you're here to squad up, share a project, brainstorm an idea, or just say what's up —
+                    you're welcome. Connect, share ideas, discuss projects, and let's build something worth talking about.
+                </p>
+                <a href="https://wa.me/254748397839?text=Hi%20Leon!%20I'd%20like%20to%20join%20the%20Leon%20Community%20and%20connect." 
+                   class="btn btn--primary" target="_blank" rel="noopener">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.6 6.3A7.8 7.8 0 0 0 12 4a7.9 7.9 0 0 0-6.8 11.9L4 20l4.2-1.1A7.9 7.9 0 0 0 12 20a7.9 7.9 0 0 0 5.6-13.7Z"/></svg>
+                    Join the Community
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LET'S CONNECT ===== -->
+    <section class="section" id="connect">
+        <div class="container">
+            <div class="section__head reveal">
+                <span class="section__eyebrow">09 — Let's Connect</span>
+                <h2 class="section__title">Good Conversations Start Here</h2>
+                <p class="section__lead">
+                    Whatever brings you here — a game, an idea, a project, or just a hello — I'm genuinely glad you reached out.
+                </p>
+            </div>
+
+            <div class="connect__grid">
+                <div class="connect__reasons reveal">
+                    <a href="https://wa.me/254748397839?text=Hi%20Leon!%20Let's%20connect%20for%20some%20gaming." 
+                       class="reason-card glass" target="_blank" rel="noopener">
+                        <span class="reason-card__emoji">🎮</span>
+                        <span class="reason-card__label">Connect for gaming</span>
+                    </a>
+                    <a href="https://wa.me/254748397839?text=Hi%20Leon!%20I'd%20like%20to%20discuss%20a%20collaboration." 
+                       class="reason-card glass" target="_blank" rel="noopener">
+                        <span class="reason-card__emoji">🤝</span>
+                        <span class="reason-card__label">Discuss collaborations</span>
+                    </a>
+                    <a href="https://wa.me/254748397839?text=Hi%20Leon!%20I%20have%20a%20business%20opportunity%20to%20share." 
+                       class="reason-card glass" target="_blank" rel="noopener">
+                        <span class="reason-card__emoji">💼</span>
+                        <span class="reason-card__label">Share business opportunities</span>
+                    </a>
+                    <a href="https://wa.me/254748397839?text=Hi%20Leon!%20I%20have%20a%20software%20or%20tech%20idea%20to%20suggest." 
+                       class="reason-card glass" target="_blank" rel="noopener">
+                        <span class="reason-card__emoji">💡</span>
+                        <span class="reason-card__label">Suggest software / tech ideas</span>
+                    </a>
+                    <a href="https://wa.me/254748397839?text=Hi%20Leon!%20Just%20saying%20hello." 
+                       class="reason-card glass" target="_blank" rel="noopener">
+                        <span class="reason-card__emoji">👋</span>
+                        <span class="reason-card__label">Simply say hello</span>
+                    </a>
+                </div>
+
+                <div class="connect__main glass reveal" data-delay="1">
+                    <div class="connect__main-head">
+                        <div class="connect__avatar">L</div>
+                        <div>
+                            <h3>Chat with Leon</h3>
+                            <p class="connect__status"><span class="pulse-dot"></span> Usually replies on WhatsApp</p>
+                        </div>
+                    </div>
+
+                    <div class="connect__contact">
+                        <div class="connect__row">
+                            <span class="connect__row-label">WhatsApp</span>
+                            <a href="https://wa.me/254748397839" target="_blank" rel="noopener">+254 748 397 839</a>
+                        </div>
+                        <div class="connect__row">
+                            <span class="connect__row-label">Email</span>
+                            <a href="mailto:raphachegekamunu@gmail.com">raphachegekamunu@gmail.com</a>
+                        </div>
+                        <div class="connect__row">
+                            <span class="connect__row-label">Location</span>
+                            <span>Dandora, Nairobi, Kenya</span>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/254748397839?text=Hi%20Leon!%20I'd%20like%20to%20connect." 
+                       class="btn btn--primary btn--block" target="_blank" rel="noopener">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.6 6.3A7.8 7.8 0 0 0 12 4a7.9 7.9 0 0 0-6.8 11.9L4 20l4.2-1.1A7.9 7.9 0 0 0 12 20a7.9 7.9 0 0 0 5.6-13.7Z"/></svg>
+                        Connect on WhatsApp
+                    </a>
+
+                    <div class="connect__links">
+                        <a href="https://github.com/raphachegeke" class="connect__link" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.5-1.1-4.5-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.8-.3 2.7 1a9.3 9.3 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.5 5 .3.3.6.8.6 1.7v2.5c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
+                            GitHub
+                        </a>
+                        <a href="https://raphachegekamunu.vercel.app" class="connect__link" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1 17.9a8 8 0 0 1-6.9-6.9c.9.1 2.5.3 4.3 1.3.2 1.4.7 2.6 1.2 3.4-.2.9.4 1.7 1.4 2.2Zm-3-9.7c1.8.3 4.6.9 6.4 1.9.2 1.7.7 3 1.2 3.9a8 8 0 0 1-7.6-5.8Zm10.4-1.4c.2.4.5 1.2.5 2.5-1.6-.6-3.7-1-5.6-1.2 1-1.5 2.2-2.5 3.3-2.8a8 8 0 0 1 1.8 1.5Zm-1.8-2.2c-1.4.4-2.8 1.6-3.9 3.3-1.5-.2-3-.3-4-.3a8 8 0 0 1 7.9-3Z"/></svg>
+                            Personal Site
+                        </a>
+                        <a href="https://www.tiktok.com/@raph_leon" class="connect__link" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3a5 5 0 0 0 4 4v3a8 8 0 0 1-4-1v6a6 6 0 1 1-6-6v3a3 3 0 1 0 3 3V3Z"/></svg>
+                            TikTok
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <a href="#hero" class="footer__logo" data-scroll>
+                    <span class="footer__logo-mark">L</span>
+                    <span>LEON</span>
+                </a>
+                <p class="footer__tagline">Gaming. Technology. Ideas. Let's Make Things Happen.</p>
+            </div>
+
+            <div class="footer__links">
+                <a href="#about" data-scroll>About</a>
+                <a href="#gaming" data-scroll>Gaming</a>
+                <a href="#software" data-scroll>Software</a>
+                <a href="#services" data-scroll>Services</a>
+                <a href="#community" data-scroll>Community</a>
+                <a href="#connect" data-scroll>Connect</a>
+            </div>
+
+            <div class="footer__social">
+                <a href="https://www.tiktok.com/@raph_leon" target="_blank" rel="noopener" aria-label="TikTok">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3a5 5 0 0 0 4 4v3a8 8 0 0 1-4-1v6a6 6 0 1 1-6-6v3a3 3 0 1 0 3 3V3Z"/></svg>
+                </a>
+                <a href="#" class="footer__social--placeholder" aria-label="Instagram (link to be added)">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-7.1 17A10 10 0 1 0 12 2Zm5 4a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm-5 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"/></svg>
+                </a>
+                <a href="#" class="footer__social--placeholder" aria-label="Facebook (link to be added)">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 22v-8h3l1-4h-4V8a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2H7v4h2v8Z"/></svg>
+                </a>
+                <a href="#" class="footer__social--placeholder" aria-label="YouTube (link to be added)">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8a3 3 0 0 0-2-2C17 5 12 5 12 5s-5 0-7 1a3 3 0 0 0-2 2 31 31 0 0 0 0 8 3 3 0 0 0 2 2c2 1 7 1 7 1s5 0 7-1a3 3 0 0 0 2-2 31 31 0 0 0 0-8Zm-9 5V9l4 2Z"/></svg>
+                </a>
+                <a href="https://github.com/raphachegeke" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.5-1.1-4.5-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.8-.3 2.7 1a9.3 9.3 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.5 5 .3.3.6.8.6 1.7v2.5c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
+                </a>
+                <a href="https://raphachegekamunu.vercel.app" target="_blank" rel="noopener" aria-label="Personal website">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1 17.9a8 8 0 0 1-6.9-6.9c.9.1 2.5.3 4.3 1.3.2 1.4.7 2.6 1.2 3.4-.2.9.4 1.7 1.4 2.2Zm-3-9.7c1.8.3 4.6.9 6.4 1.9.2 1.7.7 3 1.2 3.9a8 8 0 0 1-7.6-5.8Zm10.4-1.4c.2.4.5 1.2.5 2.5-1.6-.6-3.7-1-5.6-1.2 1-1.5 2.2-2.5 3.3-2.8a8 8 0 0 1 1.8 1.5Z"/></svg>
+                </a>
+            </div>
+
+            <div class="footer__legal">
+                <a href="privacy.html">Privacy Policy</a>
+                <span aria-hidden="true">·</span>
+                <a href="terms.html">Terms &amp; Conditions</a>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; <span id="year">2025</span> Leon. All rights reserved.</p>
+                <p class="footer__made">Built with HTML, CSS &amp; vanilla JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copy toast -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4Z"/></svg>
+        <span id="toastText">Copied!</span>
+    </div>
+
+    <!-- Back to top -->
+    <a href="#hero" class="back-top" id="backTop" data-scroll aria-label="Back to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.5 5.5 14l1.1 1.1L12 9.7l5.4 5.4L18.5 14Z"/></svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
